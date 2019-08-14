@@ -1,0 +1,27 @@
+/* Styles go here */
+fieldset{
+   display: block;
+
+  border: 10px solid ;
+  background-color: lightyellow;
+  border-color: yellow ;
+
+}
+
+text:hover{
+  font-size:20px;
+    transition: all 500ms;
+    font-size-adjust: 20px;
+}
+
+input:hover{
+  font-size:20px;
+    transition: all 500ms;
+    font-size-adjust: 20px;
+}
+
+div:hover{
+  font-size:20px;
+    transition: all 500ms;
+    font-size-adjust: 20px;
+}
