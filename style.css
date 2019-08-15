@@ -25,3 +25,15 @@ div:hover{
     transition: all 500ms;
     font-size-adjust: 20px;
 }
+
+#red{
+  padding: 5px;
+  background-color: Red;
+  color:white;
+}
+
+#purple{
+  padding: 5px;
+  background-color: purple;
+  color:white;
+}

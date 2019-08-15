@@ -1,63 +1,67 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-  </head>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+</head>
 
-  <body>
-    <h1>Please Enter Your Details For Our Dating Website!</h1>
-    <form>
-      <!--Your Face-->
-	<fieldset>
-		<legend>Your Face</legend>
-		<div>Your image: <input type="file"></div> <br>
-		<div>Image preview:</div>  <br>
-	</fieldset> <br>
-	
-	<!--General Details-->
-	<fieldset>
-		<legend>Your General Details</legend>
-	<div>Name: <input type="text" name="name" placeholder="Your full name here"></div>	 <br>
-	<div>Gender: <input type="radio" name="gender" value="Male"> Male
-		<input type="radio" name="gender" value="Female"> Female </div> <br>
-		<div>Age: <input type="number" name="age" min="1" max=""> </div> <br>
-		<div>Date of birth: <input type="date" name="bday"></div> <br>
-		<div>Favorite color: <input type="color" name="favcolor" value="black"></div> <br>
-		<div>Which country:
-  <input list="country" name="country">
-  <datalist id="country">
-    <option value="USA ">
-    <option value="Mexico">
-    <option value="Canada">
-    <option value="China">
-    <option value="Korea">
-  </datalist> </div>
-</fieldset> <br>
-</form>
+<body>
+	<h1>Please Enter Your Details For Our Dating Website!</h1>
+	<form>
+		<!--Your Face-->
+		<fieldset>
+			<legend>Your Face</legend>
+			<div>Your image: <input type="file"></div> <br>
+			<div>Image preview:
+				
+			</div> <br>
+		</fieldset> <br>
 
-<!--Your Indicators-->
-<fieldset>
+		<!--General Details-->
+		<fieldset>
+			<legend>Your General Details</legend>
+			<div>Name: <input type="text" name="name" placeholder="Your full name here"></div> <br>
+			<div>Gender: <input type="radio" name="gender" value="Male"> Male
+				<input type="radio" name="gender" value="Female"> Female </div> <br>
+			<div>Age: <input type="number" name="age" min="1" max=""> </div> <br>
+			<div>Date of birth: <input type="date" name="bday"></div> <br>
+			<div>Favorite color: <input type="color" name="favcolor" value="black"></div> <br>
+			<div>Which country:
+				<input list="country" name="country">
+				<datalist id="country">
+					<option value="USA ">
+					<option value="Mexico">
+					<option value="Canada">
+					<option value="China">
+					<option value="Korea">
+				</datalist> </div>
+		</fieldset> <br>
+	</form>
+
+	<!--Your Indicators-->
+	<fieldset>
 		<legend>Your Indicators</legend>
-		
-	<div>	Height: Short <input type="range" name="points"> Tall </div>  <br>
-		<div>Salary: Poor <input type="range" name="points"> Rich </div> <br>
+
+		<div> Height: <mark id="red">Short</mark> <input type="range" name="points"> <mark id="purple">Tall</mark>  </div> <br>
+		<div>Salary: <mark id="red">Poor</mark> <input type="range" name="points"> <mark id="purple">Rich</mark> </div> <br>
 	</fieldset> <br>
 
-<!--Your Contact Information-->
+	<!--Your Contact Information-->
 	<fieldset>
 		<legend>Your Contact Information </legend>
-		
+
 		<div>Email: <input type="email" name="Email" required> </div> <br>
 		<div>Mobile: <input type="Phone" name="Mobile" required> </div> <br>
 		<div>Address: <input type="text" name="Address"> </div> <br>
-	<div>
-		Method to contact you:<form><input type="radio" name="Email" value="Email"> Email <input type="radio" name="Whatsapp" value="Whatsapp"> Whatsapp <input type="radio" name="inAppChat" value="inAppChat"> In-app Chat
-	</form>
-	</div>
+		<div>
+			Method to contact you:<form><input type="radio" name="Email" value="Email"> Email <input type="radio"
+					name="Whatsapp" value="Whatsapp"> Whatsapp <input type="radio" name="inAppChat" value="inAppChat">
+				In-app Chat
+			</form>
+		</div>
 	</fieldset> <br>
-  </body>
-  <input type="submit" value="Submit">
+</body>
+<input type="submit" value="Submit">
 
 </html>
