@@ -14,8 +14,20 @@
 			<legend>Your Face</legend>
 			<div>Your image: <input type="file"></div> <br>
 			<div>Image preview:
-				
-			</div> <br>
+				<script type='text/javascript'>
+					function preview_image(event) {
+						var reader = new FileReader();
+						reader.onload = function () {
+							var output = document.getElementById('output_image');
+							output.src = reader.result;
+						}
+						reader.readAsDataURL(event.target.files[0]);
+					}
+				</script>
+				<div id="wrapper">
+					<input type="file" accept="image/*" onchange="preview_image(event)">
+					<img id="output_image" />
+				</div> <br>
 		</fieldset> <br>
 
 		<!--General Details-->
@@ -43,8 +55,10 @@
 	<fieldset>
 		<legend>Your Indicators</legend>
 
-		<div> Height: <mark id="red">Short</mark> <input type="range" name="points"> <mark id="purple">Tall</mark>  </div> <br>
-		<div>Salary: <mark id="red">Poor</mark> <input type="range" name="points"> <mark id="purple">Rich</mark> </div> <br>
+		<div> Height: <mark id="red">Short</mark> <input type="range" name="points"> <mark id="purple">Tall</mark>
+		</div> <br>
+		<div>Salary: <mark id="red">Poor</mark> <input type="range" name="points"> <mark id="purple">Rich</mark> </div>
+		<br>
 	</fieldset> <br>
 
 	<!--Your Contact Information-->
